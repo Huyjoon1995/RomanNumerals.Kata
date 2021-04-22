@@ -96,5 +96,11 @@ namespace RomanNumerals.Kata.Tests
         {
             Assert.Equal("M", RomanNumerals.IntToRoman(1000));
         }
+
+        [Fact]
+        public void ConvertOneThousandNineHundredNinetyFour()
+        {
+            Assert.Equal("MCMXCIV", RomanNumerals.IntToRoman(1994));
+        }
     }
 }
