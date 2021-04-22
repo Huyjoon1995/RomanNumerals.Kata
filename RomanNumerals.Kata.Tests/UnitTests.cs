@@ -57,5 +57,40 @@ namespace RomanNumerals.Kata.Tests
         {
             Assert.Equal("L", RomanNumerals.IntToRoman(50));
         }
+
+        [Fact]
+        public void ConvertNinetyToRoman()
+        {
+            Assert.Equal("XC", RomanNumerals.IntToRoman(90));
+        }
+
+        [Fact]
+        public void ConvertOneHundredToRoman() {
+            Assert.Equal("C", RomanNumerals.IntToRoman(100));
+        }
+
+        [Fact]
+        public void ConvertFourHundredToRoman()
+        {
+            Assert.Equal("400", RomanNumerals.IntToRoman(400));
+        }
+
+        [Fact]
+        public void ConvertFiveHundredToRoman()
+        {
+            Assert.Equal("D", RomanNumerals.IntToRoman(500));
+        }
+
+        [Fact]
+        public void ConvertNineHundredToRoman()
+        {
+            Assert.Equal("CM", RomanNumerals.IntToRoman(900));
+        }
+
+        [Fact]
+        public void ConvertOneThousandToRoman()
+        {
+            Assert.Equal("M", RomanNumerals.IntToRoman(1000));
+        }
     }
 }
