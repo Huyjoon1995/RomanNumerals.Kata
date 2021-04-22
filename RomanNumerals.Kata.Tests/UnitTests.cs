@@ -1,3 +1,4 @@
+using System;
 using Xunit;
 
 namespace RomanNumerals.Kata.Tests
@@ -7,13 +8,16 @@ namespace RomanNumerals.Kata.Tests
         [Fact]
         public void ConvertZeroToRoman()
         {
-            Assert.Equal("", RomanNumerals.IntToRoman(0));
+            var ex = Assert.Throws<Exception>(() => RomanNumerals.IntToRoman(0));
+            Assert.Contains("Number must be between 1 & 3999.", ex.Message);
+
         }
 
         [Fact]
         public void ConvertFourThousandToRoman()
         {
-            Assert.Equal("", RomanNumerals.IntToRoman(4000));
+            var ex = Assert.Throws<Exception>(() => RomanNumerals.IntToRoman(4000));
+            Assert.Contains("Number must be between 1 & 3999.", ex.Message);
         }
 
         [Fact]

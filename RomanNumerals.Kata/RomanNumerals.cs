@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace RomanNumerals.Kata
@@ -9,7 +10,7 @@ namespace RomanNumerals.Kata
         {
             if(num < 1 || num > 3999)
             {
-                return "";
+                throw new Exception("Number must be between 1 & 3999.");
             }
             StringBuilder sb = new StringBuilder();
             SortedDictionary<int, string> map = new SortedDictionary<int, string>
