@@ -102,5 +102,17 @@ namespace RomanNumerals.Kata.Tests
         {
             Assert.Equal("MCMXCIV", RomanNumerals.IntToRoman(1994));
         }
+
+        [Fact]
+        public void ConvertFiftyEightToRoman()
+        {
+            Assert.Equal("LVIII", RomanNumerals.IntToRoman(58));
+        }
+
+        [Fact]
+        public void ConvertThreeThousandFiveHundredFortyNineToRoman()
+        {
+            Assert.Equal("MMMDXLIX", RomanNumerals.IntToRoman(3549));
+        }
     }
 }
